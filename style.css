@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'idroid.otf';
+    src: url(pacote-projeto-d010/fontes/idroid.otf);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #82f7b6;
+    margin: 0;
+}
+
+.menu{
+    background-image: linear-gradient(#3CDB84,#33B76E,#2B9A5C,#217345,#296C48);
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: relative; 
+    padding: 20px 0px;
+}
+
+.menu > h1{
+    text-shadow: 2px 2px 4px black;
+}
+.menu > a{
+    display: inline-block;
+    color:#80e7ae;
+    text-decoration: none;
+    position: relative;
+    margin: 5px 5px;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+.menu > a:hover{
+    background-color: #2B9A5C;
+    border-radius: 5px;
+}
+
+main{
+    background-color: white;
+    margin: 0 15%;
+    padding: 15px;
+    text-align: justify;
+
+}
+
+.principal > p{
+    text-indent: 5%;
+    font-size: 18px;
+}
+
+.principal > h1 {
+    font-family: 'idroid.otf' ;
+    color: #217345;
+    text-align: left;
+}
+.principal > h2 {
+    font-family: 'idroid.otf';
+    color: #217345;
+    background-image: linear-gradient(to right ,#74e4a6,#d3f7e3, white);
+    padding: 2px;
+}
+.link {
+    background-color: #3CDB84;
+    text-decoration: none;
+    padding: 2px 5px;
+    color: black;
+    font-weight: bold;
+}
+/* ---------------------- */
+/*      img e video       */
+/* ---------------------- */
+div{
+    padding-top:2%;
+    padding-bottom:2%;
+    background-color: #296C48;
+}
+.video iframe {
+  width: 90%;
+  max-width: 1300px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Quando a tela for menor ou igual a 600px */
+@media (max-width: 600px) {
+  .video iframe {
+    height: 300px;
+  }
+}
+/* Quando a tela for maior ou igual  1200px*/
+@media (min-width: 1200px) {
+    .video iframe {
+        height: 700px;
+    }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ---------------------- */
+/*        extra           */
+/* ---------------------- */
+
+.extra{
+    background-color: #d3f7e3;
+    border-radius: 10px;
+    text-indent:5%;
+    margin-top: 0;
+    padding-top: 0;
+}
+.extra > h3 {
+    text-indent: 0;
+    font-weight: bold;
+    background-color: #3CDB84;
+    padding: 10px;
+    border-bottom: 0px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    color: white;
+}
+
+.extra > p{
+    padding: 1%;
+    margin: 1%;
+    text-align: left;
+    font-size: 18px;
+}
+
+.coluna {
+    display: inline-block;
+    background-color: #d3f7e3;
+    text-align: left;
+    min-width: 180px;
+    padding-right: 12%;
+    padding-left: 12%;
+}
+.coluna li::before {
+  content: "✔️ ";
+  margin-right: 10px;
+}
+
+.coluna > li {
+    list-style: none;
+}
+
+
+/* ---------------------- */
+/*        footer          */
+/* ---------------------- */
+
+footer{
+    background-color: #296C48;
+    text-align: center;
+    margin: 0;
+    padding: 1%;
+    font-weight: bold;
+    color: #5fe79c;
+}
+
+footer > p > strong {
+    color: #ffffff;
+}
