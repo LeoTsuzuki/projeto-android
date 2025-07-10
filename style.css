@@ -18,8 +18,14 @@ body{
     padding: 20px 0px;
 }
 
+.menu p {
+    font-size: 1em;
+    font-weight: bolder;
+}
+
 .menu > h1{
     text-shadow: 2px 2px 4px black;
+    font-size: 2.2em;
 }
 .menu > a{
     display: inline-block;
@@ -29,7 +35,7 @@ body{
     margin: 5px 5px;
     padding: 10px;
     font-weight: bold;
-    
+    transition-duration: 0.3s;
 }
 
 .menu > a:hover{
@@ -39,7 +45,7 @@ body{
 
 main{
     background-color: white;
-    margin: 0 15%;
+    margin: 0 9%;
     padding: 15px;
     text-align: justify;
 
@@ -68,9 +74,16 @@ main{
     color: black;
     font-weight: bold;
 }
+
+.link:hover {
+    text-decoration: underline;
+
+}
+
 /* ---------------------- */
 /*      img e video       */
 /* ---------------------- */
+
 div{
     padding-top:2%;
     padding-bottom:2%;
@@ -113,7 +126,9 @@ img {
     text-indent:5%;
     margin-top: 0;
     padding-top: 0;
+    box-shadow: 1px 1px 8px;
 }
+
 .extra > h3 {
     text-indent: 0;
     font-weight: bold;
@@ -126,29 +141,20 @@ img {
 }
 
 .extra > p{
-    padding: 1%;
+    padding: 2%;
     margin: 1%;
-    text-align: left;
+    text-align: justify;
     font-size: 18px;
 }
 
 .coluna {
-    display: inline-block;
     background-color: #d3f7e3;
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: "✔️ ";
+    padding: 10px;
     text-align: left;
-    min-width: 180px;
-    padding-right: 12%;
-    padding-left: 12%;
 }
-.coluna li::before {
-  content: "✔️ ";
-  margin-right: 10px;
-}
-
-.coluna > li {
-    list-style: none;
-}
-
 
 /* ---------------------- */
 /*        footer          */
@@ -165,4 +171,5 @@ footer{
 
 footer > p > strong {
     color: #ffffff;
+    text-decoration: underline;
 }
